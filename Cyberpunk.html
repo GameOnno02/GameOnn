@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077</title>
+    <link rel="stylesheet" href="Cyberpunk.css">
+
+</head>
+
+<body>
+
+    <header class="Encabezado">
+        <div class="Menu contenedor">
+
+            <a href="#" class="Logo"><img src="imagen/Captura_de_pantalla_2024-04-10_232511-removebg-preview_edited.png"
+                    class="Menu-icono"></a>
+            <input type="checkbox" id="Menu">
+            <label for="Menu">
+                <img src="imagen/menu-btn.png" class="IconodelMenu" alt="Menu">
+            </label>
+            <nav class="Navegar">
+                <ul>
+                    <li><a href="Game Onn_Option 2.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Como funciona.html">Como funciona</a></li>
+                    <li><a href="Top Games.html">Ranking</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="Encabezado-contenido contenedor">
+            <div class="Encabezado-txt">
+                <h1>GAME <br><span>ONN</span></h1>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="progress__wrapper">
+        <div class="progress__bar"></div>
+    </div>
+
+    <main class="principal contenedor">
+        <h2>Cyberpunk 2077</h2>
+
+        <div class="pasos-contenido">
+            <p>Acepta el trabajo de tu vida, robar un implante único que permite alcanzar la inmortalidad y forja tu
+                leyenda en el enorme mundo abierto de Night City, donde tus decisiones darán forma a la historia y a las
+                personas que te rodean. Realiza todo tipo de encargos para prosperar desde merc emergente a ciberpunk de
+                leyenda, mientras descubres los misterios que envuelven al valiosísimo implante con el que todo el mundo
+                quiere hacerse.</p>
+        </div>
+    </main>
+
+    <section class="funcion contenedor">
+        <div class="contenido-funcion">
+            
+            <div class="producto1-txt">
+                <h3>Como funciona</h3>
+                <div class="text">
+                    <h4>Historia y misiones</h4>
+                    <p>Pueden sumergirse en la historia principal de Cyberpunk 2077, completando misiones que les
+                        permiten descubrir los secretos y conflictos de Night City en una ambientación futurista y
+                        distópica, con elementos de ciencia ficción y tecnología avanzada.</p>
+                    <h4>Hackeo y violación<br>de protocolo</h4>
+                    <p>El juego presenta mecánicas de hackeo, permitiendo a los jugadores desactivar sistemas de
+                        vigilancia, manipular la cognición de los enemigos y realizar otras acciones relacionadas con la
+                        tecnología</p>
+                </div>
+            </div>
+            <img src="GAME ONN PHOTOS/CYBERPUNK 1.png" alt="">
+        </div>
+    </section>
+
+    <section class="requisitos contenedor">
+        <div class="contenido-requisito">
+            <img src="GAME ONN PHOTOS/Cyberpunk 2077_jpdl_edited.jpg" alt="">
+            <div class="producto2-txt">
+                <h3>Requisitos minimos</h3>
+                <div class="tabla1 contenedor">
+                    <table>
+
+                        <tbody>
+                            <tr>
+                                <td>Tarjeta de Video</td>
+                                <td>GeForce GTX 1060 6GB o Radeon RX 580 8GB o Arc A380</td>
+                            </tr>
+                            <tr>
+                                <td>Procesador</td>
+                                <td>Core i7-6700 o Ryzen 5 1600</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>12 GB</td>
+                            </tr>
+                            <tr>
+                                <td>OS</td>
+                                <td>Windows 10 de 64 bits</td>
+                            </tr>
+                            <tr>
+                                <td>Espacio de disco libre</td>
+                                <td>70 GB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Requisitos recomendados</h3>
+                <div class="tabla2 contenedor">
+                    <table>
+
+                        <tbody>
+                            <tr>
+                                <td>Tarjeta grafica</td>
+                                <td>Nvidia GeForce RTX 2060 o Radeon RX 5700 XT</td>
+                            </tr>
+                            <tr>
+                                <td>Procesador</td>
+                                <td>Core i7-12700 o Ryzen 7 7800X3D</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>16 GB</td>
+                            </tr>
+                            <tr>
+                                <td>OS</td>
+                                <td>Windows 10 de 64 bits</td>
+                            </tr>
+                            <tr>
+                                <td>Espacio de disco libre</td>
+                                <td>70 GB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="more">
+            <a href="https://www.cyberpunk.net/us/es/cyberpunk-2077#media" class="boton-2">Pagina Oficial ❯</a>
+        </div>
+    </section>
+
+    <body>
+        <span class="background">
+            <a href="https://www.cyberpunk.net/us/es/cyberpunk-2077#media" class='button'>
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                </svg>
+                Pagina Oficial ❯
+            </a>
+        </span>
+    </body>
+
+    <script>
+        const body = document.body;
+        const progressBar = document.querySelector('.progress__bar');
+        console.log(progressBar)
+        const updateProgress = () => {
+            let scrollPos =
+                (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+            console.log(scrollPos)
+            progressBar.style.width = `${scrollPos}%`;
+            requestAnimationFrame(updateProgress);
+        };
+    
+        updateProgress()
+    </script>
+
+    <section class="contacto contenedor">
+
+        <div class="sociales contenedor">
+            <a href="https://www.facebook.com/share/2c5RGUPxSDUVKk6d/?mibextid=qi2Omg"><img src="GAME ONN PHOTOS/facebook.png" alt=""></i></a>
+            <a href="https://x.com/GameOnn269021?t=pImvPThCz-J9RxH8yGJ3vA&s=08"><img src="GAME ONN PHOTOS/gorjeo.png" alt=""></i></a>
+            <a href="#"><img src="GAME ONN PHOTOS/gmail.png" alt=""></i></a>
+            <a href="#"><img src="GAME ONN PHOTOS/social.png" alt=""></i></a>
+            <a href="https://www.instagram.com/gameonn02?utm_source=qr&igsh=MTNpZXd3a2I2MWdxcg=="><img src="GAME ONN PHOTOS/instagram.png" alt=""></i></a>
+        </div>
+    
+    </section>
+
+    <footer class="piepagina contenedor">
+        <div class="link">
+            <h4>Facultad de informatica Culiacán, UAS</h4>
+            <h4>Grupo Les Garcon</h4>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
